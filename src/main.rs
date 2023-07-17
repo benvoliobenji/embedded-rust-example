@@ -57,8 +57,8 @@ fn SysTick() {
     }
 
     // IMPORTANT omit this `if` block if running on real hardware or your debugger will end in an inconsistent state
-    if *COUNT == 9 {
-        // This will terminate the QEMU process
-        debug::exit(debug::EXIT_SUCCESS);
-    }
+    // if *COUNT == 9 {
+    //     // This will terminate the QEMU process
+    //     debug::exit(debug::EXIT_SUCCESS);
+    // }
 }
