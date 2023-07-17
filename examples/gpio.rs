@@ -7,7 +7,7 @@ struct GpioConfig<ENABLED, DIRECTION, MODE> {
     mode: MODE,
 }
 
-// Type states for MODE in GpioConfig
+// Type states for MODE in GpioConfig - these are all Zero Cost Abstractions (meaning they take up no space - size is 0)
 struct Disabled;
 struct Enabled;
 struct Output;
