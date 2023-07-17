@@ -16,7 +16,7 @@
             "runToEntryPoint": "main",
             "executable": "./target/thumbv7m-none-eabi/debug/embedded-rust-app",
             /* Run `cargo build --example hello` and uncomment this line to run semi-hosting example */
-            //"executable": "./target/thumbv7m-none-eabi/debug/examples/hello",
+            // "executable": "./target/thumbv7m-none-eabi/debug/examples/hello",
             "cpu": "cortex-m3",
             "machine": "lm3s6965evb",
         },
@@ -44,7 +44,11 @@
                 "swoFrequency": 2000000,
                 "source": "probe",
                 "decoders": [
-                    { "type": "console", "label": "ITM", "port": 0 }
+                    {
+                        "type": "console",
+                        "label": "ITM",
+                        "port": 0
+                    }
                 ]
             }
         }
